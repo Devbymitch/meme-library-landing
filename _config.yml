@@ -13,7 +13,7 @@ presskit_download_link                    :                                     
 app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : "Meme saver + organizer: never lose a meme again.\n\nBuild your Meme Library and find anything instantly.\n\nSearch memes by text inside the image (automatic text recognition on import).\n\nNo typing required."
+app_description                           : "📚 Meme saver + organizer: never lose a meme again.<br/><br/>Build your Meme Library and find anything instantly.<br/><br/>🔎Search memes by text inside the image (automatic text recognition on import).<br/><br/>No typing required."
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
