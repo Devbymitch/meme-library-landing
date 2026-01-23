@@ -13,6 +13,11 @@
 	background-position: top;
 	border-radius: 0px 0px 40px 40px;
 
+  // override for no overlay
+  height: 0 !important;
+  background: none !important;
+  border-radius: 0 !important;
+
 }
 
 .headerBackground {
