@@ -44,11 +44,11 @@ features                                  :
     
   - title                                 : Save From Anywhere
     description                           : Save memes directly from Instagram, Reddit, browser, gallery, share sheet, etc.
-    fontawesome_icon_name                 : share
+    fontawesome_icon_name                 : share-from-square
 
   - title                                 : Backup & Restore
     description                           : Never lose your collection again. Secure backups and easy restores when switching phones.
-    fontawesome_icon_name                 : cloud
+    fontawesome_icon_name                 : cloud-arrow-up
 
   - title                                 : Lightweight & Clean
     description                           : No bloat. No ads. Just a fast, focused meme vault.
