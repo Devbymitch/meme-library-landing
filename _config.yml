@@ -44,11 +44,11 @@ features                                  :
     
   - title                                 : Save From Anywhere
     description                           : Save memes directly from Instagram, Reddit, browser, gallery, share sheet, etc.
-    fontawesome_icon_name                 : share-from-square
+    fontawesome_icon_name                 : share
 
   - title                                 : Backup & Restore
     description                           : Never lose your collection again. Secure backups and easy restores when switching phones.
-    fontawesome_icon_name                 : cloud-arrow-up
+    fontawesome_icon_name                 : cloud
 
   - title                                 : Lightweight & Clean
     description                           : No bloat. No ads. Just a fast, focused meme vault.
@@ -58,9 +58,9 @@ features                                  :
     description                           : Your memes stay on your device. No social feed. No forced sharing. No tracking nonsense.
     fontawesome_icon_name                 : lock
   
-  - title                                 : Instant Results
-    description                           : Built for speed — thousands of memes, instant search, zero lag.
-    fontawesome_icon_name                 : bolt
+  - title                                 : #Instant Results
+    description                           : #Built for speed — thousands of memes, instant search, zero lag.
+    fontawesome_icon_name                 : #bolt
 
   - title                                 : Built for Meme People
     description                           : Designed specifically for how people actually use memes — fast recall, fast sharing.
