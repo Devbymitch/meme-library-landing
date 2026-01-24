@@ -692,9 +692,3 @@ footer {
 .hidden {
 	display: none;
 }
-
-// Reorder elements on mobile: move download buttons above description
-@media only screen and (max-width: 992px) {
-	.downloadButtonsContainer { order: 20; }
-	.appDescriptionContainer { order: 30; }
-}
