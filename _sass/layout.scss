@@ -689,6 +689,10 @@ footer {
 		padding-bottom: 70px;
 		display: flex;
 	}
+
+	/* Reorder content on mobile: hide the original top iphonePreview and show the in-flow mobile one */
+	.iphonePreview:not(.iphonePreview--mobile) { display: none !important; }
+	.iphonePreview--mobile { display: flex; }
 	
 } 
 
