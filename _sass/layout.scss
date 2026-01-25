@@ -392,6 +392,11 @@ nav > ul li a:active {
 	margin-top: 68px;
 }
 
+/* Hide the mobile-only preview by default to avoid duplicate players on desktop */
+.iphonePreview--mobile {
+	display: none;
+}
+
 .iphoneScreen {
 	width: 349px;
 	-webkit-clip-path: url(#screenMask);
