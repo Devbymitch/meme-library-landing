@@ -698,6 +698,43 @@ footer {
 	/* Reorder content on mobile: hide the original top iphonePreview and show the in-flow mobile one */
 	.iphonePreview:not(.iphonePreview--mobile) { display: none !important; }
 	.iphonePreview--mobile { display: flex; }
+
+	/* Make the mobile preview nearly full width, while keeping the mask aligned */
+	.iphonePreview--mobile {
+		/* Device image width (bezel). Clamp to avoid overscaling on very small/large phones */
+		--deviceW: min(94vw, 420px);
+
+		background-size: var(--deviceW) auto;
+		background-position: center 0;
+		justify-content: center;
+		padding-bottom: 24px; /* tighter spacing below the preview */
+	}
+
+	/* Screen image (screenshot fallback) sized from device width */
+	.iphonePreview--mobile .iphoneScreen {
+		/* Screen is ~226 of 260 device width at existing mobile = 0.86923077 */
+		width: calc(var(--deviceW) * 0.86923077);
+		aspect-ratio: 349 / 755; /* keep correct screen shape */
+		height: auto;
+		margin: 0;
+		/* Top inset was ~17px on a 260px device = 0.06538462 */
+		margin-top: calc(var(--deviceW) * 0.06538462);
+	}
+
+	/* Video/iframe container matches the screen size/position */
+	.iphonePreview--mobile .videoContainer {
+		width: calc(var(--deviceW) * 0.86923077);
+		aspect-ratio: 349 / 755;
+		height: auto; /* determined by aspect-ratio */
+		margin-left: 0;
+		margin-top: calc(var(--deviceW) * 0.06538462);
+	}
+
+	.iphonePreview--mobile .videoContainer > video,
+	.iphonePreview--mobile .videoContainer > iframe {
+		width: 100%;
+		height: 100%;
+	}
 	
 } 
 
