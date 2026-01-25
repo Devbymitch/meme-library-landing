@@ -16,14 +16,32 @@
                             </clipPath>
                         </svg>
 
+                        {% assign yt_id = site.youtube_short_video_id %}
+                        {% if yt_id %}
+                        {% assign yt_url = 'https://www.youtube.com/embed/' | append: yt_id | append: '?autoplay=1&mute=1&playsinline=1' %}
+                        {% if site.youtube_short_does_loop %}
+                        {% assign yt_url = yt_url | append: '&loop=1&playlist=' | append: yt_id %}
+                        {% endif %}
+                        <div class="videoContainer">
+                            <iframe
+                                class="screenvideo-yt"
+                                src="{{ yt_url }}"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="autoplay; encrypted-media; picture-in-picture; web-share"
+                                allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                        </div>
+                        <img class="iphoneScreen hidden" src="" alt="">
+                        {% else %}
                         <div class="videoContainer hidden">
                             <video class="screenvideo" autoplay="autoplay" controls="controls">
                             </video>
-                        </div>  
-                        
+                        </div>
                         <img class="iphoneScreen hidden" src="" alt="">
-
                         {% include screencontent.html %}
+                        {% endif %}
 
                     </div>
                     <div class="appInfo">

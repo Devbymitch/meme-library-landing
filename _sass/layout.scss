@@ -409,7 +409,8 @@ nav > ul li a:active {
 	margin-top: 23px;
 }
 
-.videoContainer > video {
+.videoContainer > video,
+.videoContainer > iframe {
 	width: 349px;
 	height: 755px;
 }
@@ -433,7 +434,8 @@ nav > ul li a:active {
 		margin-top: 22px;
 	}
 	
-	.videoContainer > video {
+	.videoContainer > video,
+	.videoContainer > iframe {
 		width: 322px;
 		height: 698px;
 	}
@@ -467,7 +469,8 @@ nav > ul li a:active {
 		margin-top: 17px;
 	}
 
-	.videoContainer > video {
+	.videoContainer > video,
+	.videoContainer > iframe {
 		width: 226px;
 		height: 488px;
 	}

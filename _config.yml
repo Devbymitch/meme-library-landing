@@ -74,6 +74,9 @@ features                                  :
 
 # Theme Settings
 topbar_color                              : "#000000"
+
+youtube_short_video_id                    : nNQoxZRGfNM                                         # Set to your YouTube Short video ID (e.g., dQw4w9WgXcQ). If set, the Short will be embedded.
+youtube_short_does_loop                   : false                                    # When true, the Short will loop using YouTube's loop + playlist params.
 topbar_transparency                       : 0.1
 topbar_title_color                        : "#ffffff"
 
